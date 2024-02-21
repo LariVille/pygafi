@@ -19,7 +19,7 @@ Before you can use this tool, please make sure you have the following software i
 First of all, you need a clean Super Mario Galaxy (2) file system using the unmodified version of the game.
 (The content extracted from your ISO must be on a known file path).
 
-Copy `diff_galaxy_og.bat` into `DATA\files` and run it. **(It must be the original file system!)**
+Copy `diff_galaxy_og.bat` into `\DATA\files\` and run it. **(It must be the original file system!)**
 It should generate a file called `output1.txt` containing the hash of each file (SHA-256) with a path linked to it.
 
 Once the operation is complete, copy `output1.txt` into the same folder as `differed_galaxy.py`.
@@ -29,7 +29,7 @@ Once the operation is complete, copy `output1.txt` into the same folder as `diff
 After obtaining `output1.txt`, it's time to generate another output file.
 You'll need the modified file system from your Super Mario Galaxy (2) Rom-Hack.
 
-Copy `diff_galaxy_modded.bat` into `\DATA\files` and run it. **(It must be the modified file system!)**
+Copy `diff_galaxy_modded.bat` into `\DATA\files\` and run it. **(It must be the modified file system!)**
 It should generate a file called `output2.txt` containing the hash of each file (SHA-256) with a path linked to it.
 
 Once the operation is complete, copy `output2.txt` to the same folder as `differed_galaxy.py`.
