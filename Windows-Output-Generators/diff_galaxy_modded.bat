@@ -6,7 +6,7 @@ for /R . %%f in (*.*) do (
             echo | set/p="%%f - " >> output2.txt
             certutil -hashfile "%%f" SHA256 | findstr /V ":" >> output2.txt
         ) else (
-            echo An empty file was found. Ignored the file.
+            echo An empty file was found: %%~nxf. Ignored the file.
         )
     )
 )
