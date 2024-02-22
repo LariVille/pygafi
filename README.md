@@ -68,3 +68,8 @@ A: No, it's totally normal, some files in the original Super Mario Galaxy (2) Fi
 Q: When i'm trying to run the `.sh` files, it says access denied or no permission what should I do?
 
 A: You need to set the `.sh` files as an executable by entering `chmod +x [name of the file].sh` in the console. (Without the brackets)
+
+
+# Known Bugs
+
+* The content extracted in LocalizeData may be incorrect due to regional differences
