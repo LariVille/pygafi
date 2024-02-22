@@ -40,6 +40,8 @@ Go to the pygafi root folder, make sure there are `output1.txt` *(the original)*
 
 Run `differed_galaxy.py` and it will generate `differed.txt` containing all the hash differences between the two outputs.
 
+Do not rename or move `differed.txt` until you finished using Pygafi.
+
 ## Extract modified data
 
 Finally, make sure the modified file system is still connected to the device and run `generate.py`.
