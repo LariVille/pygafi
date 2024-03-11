@@ -1,5 +1,11 @@
 # pygafi
-*Python Galaxy Files.*
+<h3 align="center">
+  <br>
+  <img src="https://github.com/LariVille/pygafi/blob/main/logo.png" alt="Pygafi logo"/>
+  <br>
+  <b>Python Galaxy Files</b>
+  <br>
+</h3>
 
 > This project is still in **BETA**, if you find any problems, please report them in the issues tab.
 
