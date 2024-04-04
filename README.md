@@ -41,4 +41,5 @@ A: You need to set the `.sh` files as an executable by entering `chmod +x [name 
 
 # Known Bugs
 
-* The content extracted in LocalizeData may be incorrect due to regional differences
+* Extracted localization data may be incorrect due to regional differences.
+(For example, if your modified NTSC-U file system contains PAL translations in addition to NTSC-U translations, and you are using an unmodified NTSC-U file system, only the NTSC-U translations will be extracted correctly; the PAL translations will not be sorted and will be considered modified, since the NTSC-U version does not contain PAL translations by default. PAL translations will always be present in the extraction, which will contain the original game files. A patch will soon be available to correct this problem).
