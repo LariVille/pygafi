@@ -24,45 +24,8 @@ For Linux users only:
 * realpath
 
 # How to use Pygafi
-## General Information
-If you are on Windows, use the `.bat` files in the Windows-Output-Generator folder.
 
-If you are on Linux, use the `.sh` files in the Linux-Output-Generator folder.
-
-## Generate output files
-### Get original output
-
-First of all, you need a clean Super Mario Galaxy (2) file system using the unmodified version of the game.
-(The content extracted from your ISO must be on a known file path).
-
-Copy `diff_galaxy_og.bat`/`diff_galaxy_og.sh` into `\DATA\files\` and run it. **(It must be the original file system!)**
-It should generate a file called `output1.txt` containing the hash of each file (SHA-256) with a path linked to it.
-
-Once the operation is complete, copy `output1.txt` into the same folder as `differed_galaxy.py`.
-
-### Get the modified output
-
-After obtaining `output1.txt`, it's time to generate another output file.
-You'll need the modified file system from your Super Mario Galaxy (2) Rom-Hack.
-
-Copy `diff_galaxy_modded.bat`/`diff_galaxy_modded.sh` into `\DATA\files\` and run it. **(It must be the modified file system!)**
-It should generate a file called `output2.txt` containing the hash of each file (SHA-256) with a path linked to it.
-
-Once the operation is complete, copy `output2.txt` to the same folder as `differed_galaxy.py`.
-
-## Analyze output file differences
-
-Go to the pygafi root folder, make sure there are `output1.txt` *(the original)* and `output2.txt` *(the modified)*, **do not rename the files**.
-
-Run `differed_galaxy.py` and it will generate `differed.txt` containing all the hash differences between the two outputs.
-
-Do not rename or move `differed.txt` until you finished using Pygafi.
-
-## Extract modified data
-
-Finally, make sure the modified file system is still connected to the device and run `generate.py`/`generate_linux.py`.
-
-A folder called `GENERATED` will contain all the data extracted from the modified file system.
+### The instructions have been moved to the [Wiki](https://github.com/LariVille/pygafi/wiki)
 
 # FAQ
 
