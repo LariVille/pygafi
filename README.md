@@ -5,6 +5,8 @@
   <br>
   <b>Python Galaxy Files</b>
   <br>
+  <br>
+  <b>A Simple Filesystem tool for Super Mario Galaxy (2).</b>
 </h3>
 
 > This project is still in **BETA**, if you find any problems, please report them in the issues tab.
