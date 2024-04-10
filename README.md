@@ -27,19 +27,7 @@ For Linux users only:
 
 # How to use Pygafi
 
-### The instructions have been moved to the [Wiki](https://github.com/LariVille/pygafi/wiki)
-
-# FAQ
-
-Q: When i'm generating an output file I get an error saying that a file is empty and it was ignored, should I be concerned?
-
-A: No, it's totally normal, some files in the original Super Mario Galaxy (2) File System are empty, it won't modify the result.
-
-
-Q: When i'm trying to run the `.sh` files, it says access denied or no permission what should I do?
-
-A: You need to set the `.sh` files as an executable by entering `chmod +x [name of the file].sh` in the console. (Without the brackets)
-
+### The instructions and FAQ have been moved to the [Wiki](https://github.com/LariVille/pygafi/wiki)
 
 # Known Bugs
 
