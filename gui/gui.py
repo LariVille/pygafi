@@ -6,6 +6,7 @@ import platform
 from pathlib import Path
 from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage, filedialog, font
 import tkinter.messagebox as messagebox
+from collections import defaultdict
 
 BASE_DIR = Path(__file__).parent
 ASSETS_PATH = BASE_DIR / "assets" / "frame0"
@@ -39,14 +40,24 @@ def differed_galaxy(output1_path, output2_path):
 
     try:
         with open(output1_path, 'r') as file1, open(output2_path, 'r') as file2:
-            hashes1 = {line.split(' - ')[1].strip(): line.split(' - ')[0] for line in file1 if 'diff_galaxy_og' not in line and 'diff_galaxy_modded' not in line}
-            hashes2 = {line.split(' - ')[1].strip(): line.split(' - ')[0] for line in file2 if 'diff_galaxy_og' not in line and 'diff_galaxy_modded' not in line}
+            hashes1 = defaultdict(list)
+            for line in file1:
+                if 'diff_galaxy_og' not in line and 'diff_galaxy_modded' not in line:
+                    path, hash = line.split(' - ')[0], line.split(' - ')[1].strip()
+                    hashes1[hash].append(path)
+
+            hashes2 = defaultdict(list)
+            for line in file2:
+                if 'diff_galaxy_og' not in line and 'diff_galaxy_modded' not in line:
+                    path, hash = line.split(' - ')[0], line.split(' - ')[1].strip()
+                    hashes2[hash].append(path)
 
         diff_hashes = set(hashes2.keys()).difference(hashes1.keys())
 
         with open('differed.txt', 'w') as outfile:
             for hash in diff_hashes:
-                outfile.write(hashes2[hash] + ' - ' + hash + '\n\n')
+                for path in hashes2[hash]:
+                    outfile.write(path + ' - ' + hash + '\n\n')
 
         canvas.itemconfig(handler_text, text="Differed Successfully!", fill="green")
     except FileNotFoundError:
@@ -110,7 +121,7 @@ def relative_to_assets(path: str) -> Path:
 
 
 root = tk.Tk()
-root.title("Pygafi v0.3 -- A Filesystem tool for Super Mario Galaxy")
+root.title("Pygafi v0.4 -- A Filesystem tool for Super Mario Galaxy")
 root.geometry("660x470")
 root.configure(bg = "#F1EAFF")
 root.resizable(False, False)
