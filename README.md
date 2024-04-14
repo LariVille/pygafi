@@ -28,13 +28,3 @@ For Linux users only:
 # How to use Pygafi
 
 ### The instructions and FAQ have been moved to the [Wiki](https://github.com/LariVille/pygafi/wiki)
-
-# Known Bugs
-
-> [!NOTE]
-> These bugs will be patched as soon as possible when a fix will be found.
-
-* Extracted localization data may be incorrect due to regional differences.
-(For instance, if your modified NTSC-U file system includes PAL translations alongside NTSC-U translations, and you are using an unmodified NTSC-U file system, only the NTSC-U translations will be correctly extracted. The PAL translations won’t be sorted and will be considered modified, as the NTSC-U version doesn’t inherently have PAL translations. However, PAL translations will always be present in the extraction, which contains the original game files. A patch to address this issue will be available soon)
-
-* **[FIXED]** ~~Duplicate hashes in one file system can cause issues (For instance, if you copy-pasted files that are in different locations in a file system, only one will be extracted correctly)~~
