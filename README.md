@@ -1,7 +1,7 @@
 # pygafi
 <h3 align="center">
   <br>
-  <img src="https://github.com/LariVille/pygafi/blob/main/logo.png" alt="Pygafi logo"/>
+  <img src="https://raw.githubusercontent.com/LariVille/pygafi/fe7fea67e7899cef574eafe32791688e46644bb1/logo.png" alt="Pygafi logo"/>
   <br>
   <b>Python Galaxy Files</b>
   <br>
