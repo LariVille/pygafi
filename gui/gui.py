@@ -8,6 +8,7 @@ from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage, filedialog, fon
 import tkinter.messagebox as messagebox
 from collections import defaultdict
 
+
 BASE_DIR = Path(__file__).parent
 ASSETS_PATH = BASE_DIR / "assets" / "frame0"
 
@@ -20,14 +21,14 @@ def is_font_exist(font_name):
 
 def browse_file_output1():
     global output1_path
-    output1_path = filedialog.askopenfilename(initialdir="/", title="Select output1.txt", filetypes=(("Original Output", "output1.txt"), ("All files", "*.*")))
+    output1_path = filedialog.askopenfilename(initialdir="/", title="Select a .ogfs file", filetypes=(("Original Galaxy File System", "*.ogfs"), ("Legacy OG Output", "output1.txt"), ("All files", "*.*")))
     if output1_path:
         entry_1.delete(0, tk.END)
         entry_1.insert(0, output1_path)
 
 def browse_file_output2():
     global output2_path
-    output2_path = filedialog.askopenfilename(initialdir="/", title="Select output2.txt", filetypes=(("Modified Output", "output2.txt"), ("All files", "*.*")))
+    output2_path = filedialog.askopenfilename(initialdir="/", title="Select a .mgfs file", filetypes=(("Modified Galaxy File System", "*.mgfs"), ("Legacy MOD Output", "output2.txt"), ("All files", "*.*")))
     if output2_path:
         entry_2.delete(0, tk.END)
         entry_2.insert(0, output2_path)
@@ -181,7 +182,7 @@ entry_1 = Entry(
     bg="#E4E4E4",
     fg="#000716",
     highlightthickness=0,
-    text="Selected file (output1.txt): "
+    text="Selected file: "
 )
 entry_1.place(
     x=62.0,
@@ -221,7 +222,7 @@ entry_2 = Entry(
     bg="#E4E4E4",
     fg="#000716",
     highlightthickness=0,
-    text="Selected file (output2.txt): "
+    text="Selected file: "
 )
 entry_2.place(
     x=62.0,
@@ -310,8 +311,6 @@ generate_linux.place(
     height=47.0
 )
 
-
-
 handler_text = canvas.create_text(
     45.0, 409.0,
     anchor="nw",
@@ -319,7 +318,5 @@ handler_text = canvas.create_text(
     fill="#000000",
     font=(font_name, 24 * -1),
     )
-
-
 
 root.mainloop()
