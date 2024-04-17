@@ -28,3 +28,5 @@ For Linux users only:
 # How to use Pygafi
 
 ### The instructions and FAQ have been moved to the [Wiki](https://github.com/LariVille/pygafi/wiki)
+
+### Download Pygafi [here](https://github.com/LariVille/pygafi/releases) in the assets
