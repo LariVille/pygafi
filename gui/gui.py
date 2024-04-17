@@ -182,7 +182,7 @@ entry_1 = Entry(
     bg="#E4E4E4",
     fg="#000716",
     highlightthickness=0,
-    text="Selected file: "
+    text="Selected file: (ogfs)"
 )
 entry_1.place(
     x=62.0,
@@ -222,7 +222,7 @@ entry_2 = Entry(
     bg="#E4E4E4",
     fg="#000716",
     highlightthickness=0,
-    text="Selected file: "
+    text="Selected file: (mgfs)"
 )
 entry_2.place(
     x=62.0,
