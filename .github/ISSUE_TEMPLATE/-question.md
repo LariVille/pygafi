@@ -1,5 +1,5 @@
 ---
-name: Question
+name: "!Question"
 about: Ask your questions here
 title: "[QUESTION] question title here"
 labels: QUESTION
