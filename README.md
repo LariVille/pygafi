@@ -9,7 +9,7 @@
   <b>A Simple Filesystem tool for Super Mario Galaxy (2).</b>
 </h3>
 
-> This project is still in **BETA**, if you find any problems, please report them in the issues tab.
+> This project is still in **BETA**, if you find any problems, please report them in the [issues tab](https://github.com/LariVille/pygafi/issues).
 
 # What is Pygafi?
 Pygafi is a Python tool that helps you compare two file systems of the game Super Mario Galaxy (2) and lets you extract any changes made from the original files.
