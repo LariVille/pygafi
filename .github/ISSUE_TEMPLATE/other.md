@@ -7,4 +7,4 @@ assignees: LariVille
 
 ---
 
-**Write here anything that is not in the templates. _Please add labels before submitting._**
+**Write here anything that is not in the templates. Feel free to add screenshots to add more context. _Please add labels before submitting._**
